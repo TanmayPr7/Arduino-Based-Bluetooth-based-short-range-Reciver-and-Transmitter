@@ -1,3 +1,3 @@
 # Arduino-Based-Bluetooth-based-short-range-Reciver-and-Transmitter
-# This in which I have created short rnage Reciver and Transmitter using Arduino using few components and libraries.
+# This is the project which I have created a short range Reciver and Transmitter using Arduino, few components and few Libraries required 
 # All neccesary file are here, check it out
