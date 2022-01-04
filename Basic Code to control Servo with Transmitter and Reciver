@@ -1,0 +1,11 @@
+#This the basic Code to controll a servo with Reciver and Transmitter
+
+#include <Servo.h>
+int servopin = 5;
+Servo myservo;
+char val;
+
+void setup() {
+  myservo.attach(servopin);
+  Serial.begin(38400); // Default communication rate of the Bluetooth module
+}
