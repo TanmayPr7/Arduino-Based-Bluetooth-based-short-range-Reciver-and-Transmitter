@@ -1,9 +1,12 @@
-# Hardware requirements
+# Components requirements
 1.Arduino *2
 2.Hc 05 bluetooth module *2
 3.Arduino Joystick *2
 4.Jumper Cables
-5.Cardboard or Sunboard
 
 # For Testing Purpose
 1.SG90 Servo
+
+# Library not required
+
+
