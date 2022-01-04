@@ -9,3 +9,65 @@ char val;
 void setup() {
   Serial.begin(38400); // Default communication rate of the Bluetooth module
 }
+
+void loop() {
+ int joyx = analogRead(A0);
+ int joyy = analogRead(A1);
+ int stickx = analogRead(A2);
+ int sticky = analogRead(A3);
+
+ /*//joyx = analogRead(A0);
+ Serial.print("Value of joyx is: ");
+ Serial.println(joyx);
+ //***********************************
+ //joyy = analogRead(A1);
+ Serial.print("Value of joyy is: ");
+ Serial.println(joyy);
+ delay(3000);                                 //For Checking Purpose
+
+ //stickx = analogRead(A2);
+ Serial.print("Value of stickx is: ");
+ Serial.println(stickx);
+ //*************************************
+ //sticky = analogRead(A3);
+ Serial.print("Value of sticky is: ");
+ Serial.println(sticky);
+ delay(3000);*/
+
+ if(joyx >=1010 && (joyy >=460 && joyy <=495) && stickx >=1010 && (sticky >=510 && sticky <=535)){
+  Serial.write('F');
+  delay(10);
+  //val = 'F';
+  //Serial.println("Joystick Forward");
+ }
+ else if(joyx <10 && (joyy >=460 && joyy <=495) && stickx <25 && (sticky >=510 && sticky <=535)){
+  Serial.write('B');
+  delay(10);
+  //val = 'B';
+  //Serial.println("Joystick Backward");
+ }
+ else if((joyx >500 && joyx<=530) && (joyy >460 && joyy <=485) && (stickx >500 && stickx<=530) && (sticky >500 && sticky <=535)){
+  Serial.write('S');
+  delay(10);
+  //val = 'S';
+  //Serial.println("Joystick Stable");
+ }
+ else if((stickx >500 && stickx<=530) && sticky >1010 && joyy >1010 && (joyx >500 && joyx <=535)){
+  Serial.write('R');
+  delay(10);
+  //val = 'R';
+  //Serial.println("Joystick Rightward");
+ }
+ else if((stickx >500 && stickx<=530) && sticky <25 && joyy <10 && (joyx >500 && joyx <=530)){
+  Serial.write('L');
+  delay(10);
+  //val = 'L';
+  //Serial.println("Joystick Leftward");
+ }   
+ else{
+  Serial.write('E');
+  delay(10);
+  //val = 'E';
+  //Serial.println("Error!");
+ }
+}
