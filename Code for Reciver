@@ -10,3 +10,36 @@ void loop() {
  if(Serial.available() > 0){ // Checks whether data is comming from the serial port
     val = Serial.read(); // Reads the data from the serial port
  }
+ Serial.println(val);
+ delay(1000);
+  /*if(val==1){
+    Serial.println("Forward");
+    Serial.println(val);
+    delay(1000);
+  }
+  else if(val==2){
+    Serial.println("Backward");
+    Serial.println(val);
+    delay(1000);
+  }
+  else if(val==3){
+    Serial.println("Stable");
+    Serial.println(val);
+    delay(1000);
+  }
+  else if(val==4){
+    Serial.println("Rightward");
+    Serial.println(val);
+    delay(1000);
+  }
+  else if(val==5){
+    Serial.println("Leftward");
+    Serial.println(val);
+    delay(1000);
+  }
+  else{
+    Serial.println("Error!");
+    Serial.println(val);
+    delay(1000);
+  }*/
+}
