@@ -70,4 +70,5 @@ void loop() {
   //val = 'E';
   //Serial.println("Error!");
  }
-}////////////////////////////////////
+}
+//That's it this the whole code for transmitter:)
