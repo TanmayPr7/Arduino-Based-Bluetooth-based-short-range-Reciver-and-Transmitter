@@ -12,3 +12,5 @@ void loop() {
  }
  Serial.println(val);
  delay(10);
+ 
+ //That's it with this we can check that our modules are working and sending signals properly:)
