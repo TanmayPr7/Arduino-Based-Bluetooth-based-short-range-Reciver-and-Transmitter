@@ -44,3 +44,4 @@ void loop() {
     delay(1000);
   }
 }
+//That's it this the basic code for reciver
