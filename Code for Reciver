@@ -10,29 +10,30 @@ void loop() {
  if(Serial.available() > 0){ // Checks whether data is comming from the serial port
     val = Serial.read(); // Reads the data from the serial port
  }
- Serial.println(val);
- delay(1000);
-  /*if(val==1){
+ //Serial.println(val);
+ //delay(1000);
+ 
+  if(val=='F'){
     Serial.println("Forward");
     Serial.println(val);
     delay(1000);
   }
-  else if(val==2){
+  else if(val=='B'){
     Serial.println("Backward");
     Serial.println(val);
     delay(1000);
   }
-  else if(val==3){
+  else if(val=='S'){
     Serial.println("Stable");
     Serial.println(val);
     delay(1000);
   }
-  else if(val==4){
+  else if(val=='R'){
     Serial.println("Rightward");
     Serial.println(val);
     delay(1000);
   }
-  else if(val==5){
+  else if(val=='L'){
     Serial.println("Leftward");
     Serial.println(val);
     delay(1000);
@@ -41,5 +42,5 @@ void loop() {
     Serial.println("Error!");
     Serial.println(val);
     delay(1000);
-  }*/
+  }
 }
