@@ -1,0 +1,6 @@
+# This is the list of all basic AT commands required for this project
+AT
+AT+NAME
+AT+PSWD
+AT+VERSION
+AT+UART
