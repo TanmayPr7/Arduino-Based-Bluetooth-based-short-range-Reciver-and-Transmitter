@@ -16,3 +16,5 @@
 3.Double Sided tape
 4.Soldering Iron
 5.Programming USB Cable
+
+# That's it these are all the requirements for this project:)
