@@ -4,3 +4,12 @@ AT+NAME
 AT+PSWD
 AT+VERSION
 AT+UART
+AT+ADDR
+AT+CMODE
+AT+BIND
+AT+ROLE
+AT+RESET
+AT+STATE
+AT+CLASS
+
+# That's it these are all the basic AT commands required for this project:)
